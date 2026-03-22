@@ -3,7 +3,7 @@
 int main(int argc, char *argv[])
 {
     int a = 16;
-    // this pointer p has the address of the variable a, the sterik used here is different from the dereferencing operator
+    // this pointer p has the address of the variable a, the asterik used here is different from the dereferencing operator
     int *p = &a;
 
     // * is the dereferencing operator which goes on to that memory address and check what is stored there and prints it.
