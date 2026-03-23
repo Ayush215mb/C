@@ -16,5 +16,16 @@ int main(int argc, char *argv[])
     Thing T = {12, 'k', "testing", &i, 256};
     printf("%llu \n", sizeof(T));
 
-        return 0;
+    unsigned char data;
+    for (int i = 0; i < sizeof(T); i++)
+    {
+        if (i % 4 == 0)
+        {
+            printf("\n");
+        }
+        data = *(((unsigned char *)&T) + i);
+        printf("%02x ", data);
+    }
+
+    return 0;
 }
