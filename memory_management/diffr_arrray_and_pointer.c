@@ -10,4 +10,11 @@ int main(int argc, char *argv[])
     p[0] = 1;
     p[1] = 2;
     p[2] = 3;
+
+    printf("%p, %p\n", arr, p);
+
+    printf("%llu, %llu", sizeof(arr), sizeof(p));
+
+    free(p);
+    return 0;
 }
